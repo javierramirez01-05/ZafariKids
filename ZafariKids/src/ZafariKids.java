@@ -65,8 +65,6 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblSiluetaMico = new javax.swing.JLabel();
         jlblSiluetaTigre = new javax.swing.JLabel();
         jlblSiluetaCebra = new javax.swing.JLabel();
-        jlblReproduccionMico = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -210,25 +208,6 @@ public class ZafariKids extends javax.swing.JFrame {
         getContentPane().add(jlblSiluetaCebra);
         jlblSiluetaCebra.setBounds(800, 300, 195, 143);
 
-        jlblReproduccionMico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reproduccion.png"))); // NOI18N
-        jlblReproduccionMico.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlblReproduccionMico.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlblReproduccionMicoMouseClicked(evt);
-            }
-        });
-        getContentPane().add(jlblReproduccionMico);
-        jlblReproduccionMico.setBounds(700, 280, 30, 30);
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(730, 270, 75, 22);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -267,17 +246,6 @@ public class ZafariKids extends javax.swing.JFrame {
                 jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());
     }//GEN-LAST:event_jlblCebraMouseDragged
 
-    private void jlblReproduccionMicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblReproduccionMicoMouseClicked
-      
-        
-    }//GEN-LAST:event_jlblReproduccionMicoMouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-            
-             
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -314,7 +282,6 @@ public class ZafariKids extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
     private javax.swing.JLabel jlblArena;
@@ -331,7 +298,6 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JLabel jlblMico;
     private javax.swing.JLabel jlblPalmeraD;
     private javax.swing.JLabel jlblPalmeraI;
-    private javax.swing.JLabel jlblReproduccionMico;
     private javax.swing.JLabel jlblSiluetaAguila;
     private javax.swing.JLabel jlblSiluetaCebra;
     private javax.swing.JLabel jlblSiluetaElefante;
