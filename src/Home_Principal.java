@@ -203,13 +203,13 @@ public class Home_Principal extends javax.swing.JFrame {
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
         Instrucciones ventanaInstrucciones = new Instrucciones();
-        this.dispose();
+        //this.dispose();
         ventanaInstrucciones.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     private void Instrucciones2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Instrucciones2ActionPerformed
         Instrucciones Instru2 = new Instrucciones();
-        this.dispose();
+        //this.dispose();
         Instru2.setVisible(true);
     }//GEN-LAST:event_Instrucciones2ActionPerformed
 
