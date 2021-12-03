@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.JOptionPane;
 
 
@@ -19,7 +21,19 @@ import javax.swing.JOptionPane;
  * @author jramirezm
  */
 public class ZafariKids extends javax.swing.JFrame {
-
+    public Clip clip;  
+    public String ruta="/com/edu/poli/Audios/";
+    
+    public void  sonido(String archivo){
+        try {
+            clip=AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta + archivo + ".wav")));
+            clip.start();
+        } catch (Exception e) {
+        }
+    }
+    
+    
     /**
      * Creates new form ZafariKids
      */
@@ -43,6 +57,7 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblPalmeraI = new javax.swing.JLabel();
         jlblPalmeraD = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jlblArena = new javax.swing.JLabel();
         jlblArbustosA = new javax.swing.JLabel();
         jlblHoja1 = new javax.swing.JLabel();
@@ -65,9 +80,8 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblSiluetaMico = new javax.swing.JLabel();
         jlblSiluetaTigre = new javax.swing.JLabel();
         jlblSiluetaCebra = new javax.swing.JLabel();
-        jlblInstrucciones = new javax.swing.JLabel();
-        jlblInstrucciones1 = new javax.swing.JLabel();
-        jlblPistasMono = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -81,13 +95,23 @@ public class ZafariKids extends javax.swing.JFrame {
         getContentPane().add(jlblPalmeraD);
         jlblPalmeraD.setBounds(1270, 160, 100, 500);
 
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(1130, 670, 160, 50);
+
         jlblArena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arena.png"))); // NOI18N
         getContentPane().add(jlblArena);
-        jlblArena.setBounds(350, 575, 1050, 150);
+        jlblArena.setBounds(320, 580, 1050, 150);
 
         jlblArbustosA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arbustos Arriba.png"))); // NOI18N
         getContentPane().add(jlblArbustosA);
-        jlblArbustosA.setBounds(270, -25, 1100, 300);
+        jlblArbustosA.setBounds(270, -10, 1100, 300);
 
         jlblHoja1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas Laterales 1.png"))); // NOI18N
         getContentPane().add(jlblHoja1);
@@ -211,23 +235,27 @@ public class ZafariKids extends javax.swing.JFrame {
         getContentPane().add(jlblSiluetaCebra);
         jlblSiluetaCebra.setBounds(800, 300, 195, 143);
 
-        jlblInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
-        getContentPane().add(jlblInstrucciones);
-        jlblInstrucciones.setBounds(900, 710, 140, 50);
-
-        jlblInstrucciones1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
-        getContentPane().add(jlblInstrucciones1);
-        jlblInstrucciones1.setBounds(900, 710, 140, 50);
-
-        jlblPistasMono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
-        jlblPistasMono.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlblPistasMono.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlblPistasMonoMouseClicked(evt);
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jlblPistasMono);
-        jlblPistasMono.setBounds(660, 270, 80, 30);
+        getContentPane().add(jButton2);
+        jButton2.setBounds(780, 500, 86, 30);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(1150, 352, 86, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -267,9 +295,19 @@ public class ZafariKids extends javax.swing.JFrame {
                 jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());
     }//GEN-LAST:event_jlblCebraMouseDragged
 
-    private void jlblPistasMonoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblPistasMonoMouseClicked
-        JOptionPane.showMessageDialog(this, "Sigue intentando");
-    }//GEN-LAST:event_jlblPistasMonoMouseClicked
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        sonido("Elefante");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        sonido("leon");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Instrucciones Instru2 = new Instrucciones();
+        //this.dispose();
+        Instru2.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -307,6 +345,9 @@ public class ZafariKids extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
     private javax.swing.JLabel jlblArena;
@@ -317,15 +358,12 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JLabel jlblHoja3;
     private javax.swing.JLabel jlblHoja4;
     private javax.swing.JLabel jlblHoja5;
-    private javax.swing.JLabel jlblInstrucciones;
-    private javax.swing.JLabel jlblInstrucciones1;
     private javax.swing.JLabel jlblJirafa;
     private javax.swing.JLabel jlblLeon;
     private javax.swing.JLabel jlblLogo;
     private javax.swing.JLabel jlblMico;
     private javax.swing.JLabel jlblPalmeraD;
     private javax.swing.JLabel jlblPalmeraI;
-    private javax.swing.JLabel jlblPistasMono;
     private javax.swing.JLabel jlblSiluetaAguila;
     private javax.swing.JLabel jlblSiluetaCebra;
     private javax.swing.JLabel jlblSiluetaElefante;

@@ -54,7 +54,7 @@ public class Instrucciones extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Instrucciones");
 
-        jugarJue.setText("Jugar");
+        jugarJue.setText("Aceptar");
         jugarJue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jugarJueActionPerformed(evt);
@@ -107,9 +107,7 @@ public class Instrucciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jugarJueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jugarJueActionPerformed
-        ZafariKids tercerPan = new ZafariKids();
-        this.dispose();
-        tercerPan.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jugarJueActionPerformed
 
     /**

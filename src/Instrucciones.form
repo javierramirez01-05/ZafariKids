@@ -135,7 +135,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jugarJue">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jugar"/>
+            <Property name="text" type="java.lang.String" value="Aceptar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jugarJueActionPerformed"/>

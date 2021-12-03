@@ -36,7 +36,6 @@ public class Home_Principal extends javax.swing.JFrame {
         jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
         Instrucciones2 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         btnContinuar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -72,24 +71,23 @@ public class Home_Principal extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(2147483647, 2147483647));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Instrucciones2.setText("Instrucciones");
+        Instrucciones2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Instrucciones.png"))); // NOI18N
+        Instrucciones2.setContentAreaFilled(false);
         Instrucciones2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Instrucciones2ActionPerformed(evt);
             }
         });
-        getContentPane().add(Instrucciones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 490, -1, -1));
+        getContentPane().add(Instrucciones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 470, -1, -1));
 
-        jButton2.setText("Pistas");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 490, -1, -1));
-
-        btnContinuar.setText("Play");
+        btnContinuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Play.png"))); // NOI18N
+        btnContinuar.setContentAreaFilled(false);
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnContinuarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 490, -1, -1));
+        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 470, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -202,9 +200,9 @@ public class Home_Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_sub_InstruActionPerformed
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        Instrucciones ventanaInstrucciones = new Instrucciones();
+        ZafariKids VentanaJugar = new ZafariKids();
         //this.dispose();
-        ventanaInstrucciones.setVisible(true);
+            VentanaJugar.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     private void Instrucciones2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Instrucciones2ActionPerformed
@@ -253,7 +251,6 @@ public class Home_Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem acerca;
     private javax.swing.JMenu acercad;
     private javax.swing.JButton btnContinuar;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
