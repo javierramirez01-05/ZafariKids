@@ -183,7 +183,7 @@ public class Home_Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void acercaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acercaActionPerformed
-    Acercad acerca = new Acercad(this, rootPaneCheckingEnabled);
+    Acerca acerca = new Acerca(this, rootPaneCheckingEnabled);
     acerca.setVisible(true);
           
 
