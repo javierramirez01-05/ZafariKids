@@ -1,3 +1,10 @@
+
+import java.awt.Color;
+
+
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +22,13 @@ public class Instrucciones extends javax.swing.JFrame {
      */
     public Instrucciones() {
         initComponents();
+        
+        jScrollPane2.setOpaque(false);
+        jScrollPane2.getViewport().setOpaque(false);
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setViewportBorder(null);
+        jTextArea2.setBorder(null);
+        jTextArea2.setBackground(new Color(0,0,0,0));
     }
 
     /**
@@ -27,88 +41,51 @@ public class Instrucciones extends javax.swing.JFrame {
     private void initComponents() {
 
         jSeparator1 = new javax.swing.JSeparator();
-        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
-        jugarJue = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Instrucciones");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 204));
+        jButton1.setText("Aceptar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, -1, -1));
 
-        jTextArea2.setBackground(new java.awt.Color(102, 153, 60));
+        jLabel1.setBackground(new java.awt.Color(153, 153, 0));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Instrucciones");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 240, 50));
+
+        jTextArea2.setBackground(new java.awt.Color(255, 255, 255));
         jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextArea2.setForeground(new java.awt.Color(0, 51, 51));
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jTextArea2.setForeground(new java.awt.Color(255, 255, 51));
         jTextArea2.setRows(5);
-        jTextArea2.setText(" 1.El jugador Debe Iniciar Zafarí Kids.\n 2.Se abrira la pantalla principal del juego donde al lado izquierdo estarán ubicados los animales y en\n    el resto de la pantalla las siluetas. \n 3.El jugador debe leer cuidadosamente las instrucciones ubicadas en el menú inferior del juego al lado\n    derecho.\n 4.Para interactuar con las imagenes de animales y las siluetas debe dirigirse a las pistas donde esta \n    descrito la particularidad de cada animal.\n\n 5.Tendremos un validador en la pantalla para que el jugador valide cuando ya tenga todas las figuras\n    de animales en la posición de las siluetas.\n\n 6.Al presionar este validador si todas las figuras está ubicados correctamente en cada una de la \n    silueta correspondiente saldra un mensaje que a logrado identificar los animales correctamente\n    y que el juegoha terminado, si alguna figura no corresponde con la silueta saldrá un mensaje que \n    debe verificar la posicion de las figuras de los animales y se organizaran automaticamente en el \n    lado izquierdo y deberá volver a ubicarlas en la silueta principal.\n");
-        jTextArea2.setBorder(new javax.swing.border.MatteBorder(null));
-        jTextArea2.setCaretColor(new java.awt.Color(0, 0, 0));
-        jTextArea2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        jTextArea2.setText(" 1.El jugador Debe Iniciar Zafarí Kids.\n\n 2.Se abrira la pantalla principal del juego donde al lado izquierdo estarán ubicados los animales y en el resto de la pantalla las siluetas. \n\n 3.El jugador debe leer cuidadosamente las instrucciones ubicadas en el menú inferior del juego al lado derecho.\n\n 4.Para interactuar con las imagenes de animales y las siluetas debe dirigirse a las pistas donde esta   descrito la particularidad de cada animal.\n\n 5.Tendremos un validador en la pantalla para que el jugador valide cuando ya tenga todas las figuras  de animales en la posición de las siluetas.\n\n 6.Al presionar este validador si todas las figuras está ubicados correctamente en cada una de la  silueta correspondiente saldra un mensaje que\n a logrado identificar los animales correctamente  y que el juegoha terminado, si alguna figura no corresponde con la silueta saldrá un mensaje \nque  debe verificar la posicion de las figuras de los animales y se organizaran automaticamente en el  lado izquierdo y deberá volver a ubicarlas\n en la silueta principal.");
+        jTextArea2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextArea2.setEnabled(false);
         jScrollPane2.setViewportView(jTextArea2);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Instrucciones");
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 970, 350));
 
-        jugarJue.setText("Aceptar");
-        jugarJue.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jugarJueActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(229, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(193, 193, 193))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jugarJue)
-                        .addGap(45, 45, 45))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jugarJue)
-                .addGap(22, 22, 22))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/5366443.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 670));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jugarJueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jugarJueActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
-    }//GEN-LAST:event_jugarJueActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,11 +123,11 @@ public class Instrucciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JButton jugarJue;
     // End of variables declaration//GEN-END:variables
 }
