@@ -361,6 +361,16 @@ public class ZafariKids extends javax.swing.JFrame {
     private void jlblTigreMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblTigreMouseDragged
         jlblTigre.setLocation(jlblTigre.getLocation().x + evt.getX() - jlblTigre.getWidth() /2,
                 jlblTigre.getLocation().y + evt.getY() - jlblTigre.getHeight());
+                     if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  jlblAguila.getY() <= 115 
+                     && jlblCebra.getX()>= 795 && jlblCebra.getX()<= 805 && jlblCebra.getY() >= 295  &&   jlblCebra.getY() <= 305 
+                     && jlblElefante.getX()>= 715 &&  jlblElefante.getX()<= 725 &&  jlblElefante.getY()>= 545 &&  jlblElefante.getY()<= 555
+                     && jlblJirafa.getX() >= 955 &&   jlblJirafa.getX()<= 965 &&  jlblJirafa.getY() >= 535 &&   jlblJirafa.getY() <= 545
+                     && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
+                     && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
+                     && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
+        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        
+        }
     }//GEN-LAST:event_jlblTigreMouseDragged
 
     private void jlblMicoMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblMicoMouseDragged
