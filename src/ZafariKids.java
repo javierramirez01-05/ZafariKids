@@ -108,7 +108,7 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jlblArbustosA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arbustos Arriba.png"))); // NOI18N
         getContentPane().add(jlblArbustosA);
-        jlblArbustosA.setBounds(270, -10, 1100, 300);
+        jlblArbustosA.setBounds(270, 10, 1100, 300);
 
         jButtonCheck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/check.png"))); // NOI18N
         jButtonCheck.setContentAreaFilled(false);
@@ -321,7 +321,11 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButtonCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckActionPerformed
-        // TODO add your handling code here:
+        if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  + jlblAguila.getY() <= 115 ) 
+        {JOptionPane.showMessageDialog(this, "PRUEBA DE ");
+            
+        } else {
+        }
     }//GEN-LAST:event_jButtonCheckActionPerformed
 
     /**
