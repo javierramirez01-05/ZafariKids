@@ -366,12 +366,12 @@ public class ZafariKids extends javax.swing.JFrame {
 
     private void jlblLeonMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblLeonMouseDragged
          jlblLeon.setLocation(jlblLeon.getLocation().x + evt.getX() - jlblLeon.getWidth() /2,
-                jlblLeon.getLocation().y + evt.getY() - jlblLeon.getHeight());
+                jlblLeon.getLocation().y + evt.getY() - jlblLeon.getHeight());        
     }//GEN-LAST:event_jlblLeonMouseDragged
 
     private void jlblCebraMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblCebraMouseDragged
          jlblCebra.setLocation(jlblCebra.getLocation().x + evt.getX() - jlblCebra.getWidth() /2,
-                jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());
+                jlblCebra.getLocation().y + evt.getY() - jlblCebra.getHeight());        
     }//GEN-LAST:event_jlblCebraMouseDragged
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
