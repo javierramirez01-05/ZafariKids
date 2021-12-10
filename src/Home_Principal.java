@@ -13,7 +13,7 @@ public class Home_Principal extends javax.swing.JFrame {
      */
     public Home_Principal() {
         initComponents();
-        this.setSize(1100, 600);
+        this.setSize(1100, 580);
         this.getContentPane().setBackground(Color.decode("#90EE90"));
         this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -37,9 +37,7 @@ public class Home_Principal extends javax.swing.JFrame {
         jMenu7 = new javax.swing.JMenu();
         Instrucciones2 = new javax.swing.JButton();
         btnContinuar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        tablero = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -75,40 +73,21 @@ public class Home_Principal extends javax.swing.JFrame {
                 Instrucciones2ActionPerformed(evt);
             }
         });
-        getContentPane().add(Instrucciones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 470, -1, -1));
+        getContentPane().add(Instrucciones2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, -1, -1));
 
         btnContinuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Play.png"))); // NOI18N
         btnContinuar.setContentAreaFilled(false);
+        btnContinuar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnContinuarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 470, -1, -1));
+        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jLabel1.setMaximumSize(new java.awt.Dimension(200, 180));
-        jLabel1.setMinimumSize(new java.awt.Dimension(200, 180));
-        jLabel1.setPreferredSize(new java.awt.Dimension(200, 180));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 200, 170));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Imagen1.0.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Home principal.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1100, 580));
-
-        javax.swing.GroupLayout tableroLayout = new javax.swing.GroupLayout(tablero);
-        tablero.setLayout(tableroLayout);
-        tableroLayout.setHorizontalGroup(
-            tableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 550, Short.MAX_VALUE)
-        );
-        tableroLayout.setVerticalGroup(
-            tableroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(tablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 550, 220));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -27, 1100, 580));
 
         jMenu1.setText("Inicio");
 
@@ -184,14 +163,14 @@ public class Home_Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_sub_InstruActionPerformed
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        ZafariKids VentanaJugar = new ZafariKids();
+        Instrucciones instrucciones = new Instrucciones();
         this.dispose();
-            VentanaJugar.setVisible(true);
+        instrucciones.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
 
     private void Instrucciones2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Instrucciones2ActionPerformed
-        Instrucciones Instru2 = new Instrucciones();
-        this.dispose();
+        Instrucciones_ Instru2 = new Instrucciones_();
+        //this.dispose();
         Instru2.setVisible(true);
     }//GEN-LAST:event_Instrucciones2ActionPerformed
 
@@ -241,7 +220,6 @@ public class Home_Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem acerca;
     private javax.swing.JMenu acercad;
     private javax.swing.JButton btnContinuar;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -256,6 +234,5 @@ public class Home_Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem sub_Instru;
     private javax.swing.JMenuItem sub_ma_salir;
-    private javax.swing.JPanel tablero;
     // End of variables declaration//GEN-END:variables
 }

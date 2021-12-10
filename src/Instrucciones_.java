@@ -18,12 +18,12 @@ import java.awt.Color;
  *
  * @author jeiss
  */
-public class Instrucciones extends javax.swing.JFrame {
+public class Instrucciones_ extends javax.swing.JFrame {
 
     /**
      * Creates new form Instrucciones
      */
-    public Instrucciones() {
+    public Instrucciones_() {
         initComponents();
         setLocationRelativeTo(null);
          this.setSize(1100, 580);
@@ -42,22 +42,16 @@ public class Instrucciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnContinuar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Instrucciones");
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnContinuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Play.png"))); // NOI18N
-        btnContinuar.setContentAreaFilled(false);
-        btnContinuar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnContinuar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnContinuarActionPerformed(evt);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
             }
         });
-        getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 480, -1, -1));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/instrucciones_1.png"))); // NOI18N
         jLabel3.setText("jLabel3");
@@ -75,11 +69,9 @@ public class Instrucciones extends javax.swing.JFrame {
        
     }//GEN-LAST:event_jLabel3MouseEntered
 
-    private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        ZafariKids Juego = new ZafariKids();
-        //this.dispose();
-        Juego.setVisible(true);
-    }//GEN-LAST:event_btnContinuarActionPerformed
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+      setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
@@ -117,7 +109,6 @@ public class Instrucciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnContinuar;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
