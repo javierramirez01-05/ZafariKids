@@ -321,7 +321,8 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButtonCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckActionPerformed
-        if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  + jlblAguila.getY() <= 115 ) 
+        if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  + jlblAguila.getY() <= 115 
+                && jlblCebra.getX()>= 795 && jlblCebra.getX()<= 800) 
         {JOptionPane.showMessageDialog(this, "PRUEBA DE ");
             
         } else {
