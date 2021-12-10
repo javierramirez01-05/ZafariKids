@@ -85,6 +85,7 @@ public class ZafariKids extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -229,8 +230,9 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblSiluetaElefante.setBounds(720, 550, 195, 143);
 
         jlblSiluetaJirafa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Jirafa.png"))); // NOI18N
+        jlblSiluetaJirafa.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(jlblSiluetaJirafa);
-        jlblSiluetaJirafa.setBounds(950, 530, 195, 143);
+        jlblSiluetaJirafa.setBounds(960, 540, 195, 143);
 
         jlblSiluetaLeon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Silueta Leon.png"))); // NOI18N
         getContentPane().add(jlblSiluetaLeon);
@@ -291,6 +293,17 @@ public class ZafariKids extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5);
         jButton5.setBounds(660, 470, 108, 41);
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jButton6.setContentAreaFilled(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButton6);
+        jButton6.setBounds(963, 550, 80, 41);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -361,6 +374,10 @@ public class ZafariKids extends javax.swing.JFrame {
         sonido("Tigre");
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        sonido("Jirafa");
+    }//GEN-LAST:event_jButton6MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -402,6 +419,7 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButtonCheck;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
