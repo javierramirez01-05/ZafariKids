@@ -58,8 +58,9 @@ public class ZafariKids extends javax.swing.JFrame {
         jlblPalmeraI = new javax.swing.JLabel();
         jlblPalmeraD = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jlblArena = new javax.swing.JLabel();
         jlblArbustosA = new javax.swing.JLabel();
+        jButtonCheck = new javax.swing.JButton();
+        jlblArena = new javax.swing.JLabel();
         jlblHoja1 = new javax.swing.JLabel();
         jlblHoja2 = new javax.swing.JLabel();
         jlblHoja3 = new javax.swing.JLabel();
@@ -105,13 +106,23 @@ public class ZafariKids extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(1130, 670, 160, 50);
 
-        jlblArena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arena.png"))); // NOI18N
-        getContentPane().add(jlblArena);
-        jlblArena.setBounds(320, 580, 1050, 150);
-
         jlblArbustosA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arbustos Arriba.png"))); // NOI18N
         getContentPane().add(jlblArbustosA);
         jlblArbustosA.setBounds(270, -10, 1100, 300);
+
+        jButtonCheck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/check.png"))); // NOI18N
+        jButtonCheck.setContentAreaFilled(false);
+        jButtonCheck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCheckActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonCheck);
+        jButtonCheck.setBounds(400, 670, 160, 50);
+
+        jlblArena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arena.png"))); // NOI18N
+        getContentPane().add(jlblArena);
+        jlblArena.setBounds(320, 580, 1050, 150);
 
         jlblHoja1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas Laterales 1.png"))); // NOI18N
         getContentPane().add(jlblHoja1);
@@ -151,7 +162,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jlblElefante);
-        jlblElefante.setBounds(165, 180, 195, 143);
+        jlblElefante.setBounds(160, 170, 195, 143);
 
         jlblJirafa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Jirafa.png"))); // NOI18N
         jlblJirafa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -244,7 +255,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(780, 500, 86, 30);
+        jButton2.setBounds(780, 500, 113, 30);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton1.setContentAreaFilled(false);
@@ -255,7 +266,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(1150, 352, 86, 30);
+        jButton1.setBounds(1150, 352, 113, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -309,6 +320,10 @@ public class ZafariKids extends javax.swing.JFrame {
         Instru2.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButtonCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCheckActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -348,6 +363,7 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButtonCheck;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
     private javax.swing.JLabel jlblArena;
