@@ -358,9 +358,13 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButtonCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckActionPerformed
-        if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  + jlblAguila.getY() <= 115 
-                && jlblCebra.getX()>= 795 && jlblCebra.getX()<= 800 && jlblCebra.getY() >= 295  &&  + jlblCebra.getY() <= 300 
-                && jlblElefante.getX()>= 715 && + jlblElefante.getX()<= 725 && + jlblElefante.getY()>= 545 && + jlblElefante.getY()<= 550) 
+        if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  jlblAguila.getY() <= 115 
+                && jlblCebra.getX()>= 795 && jlblCebra.getX()<= 800 && jlblCebra.getY() >= 295  &&   jlblCebra.getY() <= 300 
+                && jlblElefante.getX()>= 715 &&  jlblElefante.getX()<= 725 &&  jlblElefante.getY()>= 545 &&  jlblElefante.getY()<= 550
+                && jlblJirafa.getX() >= 945 &&   jlblJirafa.getX()<= 955 &&  jlblJirafa.getY() >= 525 &&   jlblJirafa.getY() <= 530
+                && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 400
+                && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 495
+                && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getX() >= 165 &&  jlblMico.getX()<= 170)
         {JOptionPane.showMessageDialog(this, "PRUEBA");
             
         } else {
