@@ -86,6 +86,8 @@ public class ZafariKids extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Zafari Kids");
@@ -110,6 +112,11 @@ public class ZafariKids extends javax.swing.JFrame {
         jButton3.setBounds(1130, 670, 160, 50);
 
         jlblArbustosA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Arbustos Arriba.png"))); // NOI18N
+        jlblArbustosA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlblArbustosAMouseClicked(evt);
+            }
+        });
         getContentPane().add(jlblArbustosA);
         jlblArbustosA.setBounds(270, 10, 1100, 300);
 
@@ -259,7 +266,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(780, 500, 108, 30);
+        jButton2.setBounds(780, 500, 113, 30);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton1.setContentAreaFilled(false);
@@ -270,7 +277,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(1150, 352, 108, 30);
+        jButton1.setBounds(1150, 352, 113, 30);
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton4.setContentAreaFilled(false);
@@ -292,7 +299,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(660, 470, 108, 41);
+        jButton5.setBounds(660, 470, 113, 37);
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton6.setContentAreaFilled(false);
@@ -303,7 +310,22 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton6);
-        jButton6.setBounds(963, 550, 80, 41);
+        jButton6.setBounds(963, 550, 80, 37);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton7);
+        jButton7.setBounds(590, 303, 80, 30);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(jButton8);
+        jButton8.setBounds(1100, 250, 80, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -465,6 +487,14 @@ public class ZafariKids extends javax.swing.JFrame {
         sonido("Jirafa");
     }//GEN-LAST:event_jButton6MouseClicked
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        sonido("mono");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jlblArbustosAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblArbustosAMouseClicked
+       sonido("aguila");
+    }//GEN-LAST:event_jlblArbustosAMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -507,6 +537,8 @@ public class ZafariKids extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButtonCheck;
     private javax.swing.JLabel jlblAguila;
     private javax.swing.JLabel jlblArbustosA;
