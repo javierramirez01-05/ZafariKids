@@ -319,7 +319,8 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+            JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
             
         }
     }//GEN-LAST:event_jlblAguilaMouseDragged
