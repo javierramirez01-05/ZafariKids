@@ -319,7 +319,8 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-           {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+            JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
             
         }
     }//GEN-LAST:event_jlblAguilaMouseDragged
@@ -337,7 +338,8 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
         {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
         
-        } 
+        }
+       
     }//GEN-LAST:event_jlblElefanteMouseDragged
 
     private void jlblJirafaMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblJirafaMouseDragged
@@ -393,19 +395,7 @@ public class ZafariKids extends javax.swing.JFrame {
 
     private void jlblLeonMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblLeonMouseDragged
          jlblLeon.setLocation(jlblLeon.getLocation().x + evt.getX() - jlblLeon.getWidth() /2,
-                jlblLeon.getLocation().y + evt.getY() - jlblLeon.getHeight());    
-         
-                 if (jlblAguila.getX() >= 1030 && jlblAguila.getX() <= 1037 &&jlblAguila.getY() >= 105 &&  jlblAguila.getY() <= 115 
-                 && jlblCebra.getX()>= 795 && jlblCebra.getX()<= 805 && jlblCebra.getY() >= 295  &&   jlblCebra.getY() <= 305 
-                 && jlblElefante.getX()>= 715 &&  jlblElefante.getX()<= 725 &&  jlblElefante.getY()>= 545 &&  jlblElefante.getY()<= 555
-                 && jlblJirafa.getX() >= 955 &&   jlblJirafa.getX()<= 965 &&  jlblJirafa.getY() >= 535 &&   jlblJirafa.getY() <= 545
-                 && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
-                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
-                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
-        
-        }
-    }                  
+                jlblLeon.getLocation().y + evt.getY() - jlblLeon.getHeight());        
     }//GEN-LAST:event_jlblLeonMouseDragged
 
     private void jlblCebraMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblCebraMouseDragged
