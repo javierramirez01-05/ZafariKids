@@ -474,9 +474,18 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+            JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
             
         } else {
+            JOptionPane.showMessageDialog(this, " Ups Algun animal no esta en su lugar vuelve a intentarlo ");
+           jlblMico.setBounds(180, 460, 195, 143);
+           jlblAguila.setBounds(-15, 180, 195, 143);
+           jlblElefante.setBounds(160, 170, 195, 143);
+           jlblJirafa.setBounds(170, 320, 195, 143);
+           jlblLeon.setBounds(-5, 460, 195, 143);
+           jlblTigre.setBounds(-5, 320, 195, 143);
+           jlblCebra.setBounds(80, 610, 195, 143);
         }
     }//GEN-LAST:event_jButtonCheckActionPerformed
 
