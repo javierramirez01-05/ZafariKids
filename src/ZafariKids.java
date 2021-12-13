@@ -118,7 +118,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jlblArbustosA);
-        jlblArbustosA.setBounds(270, 10, 1100, 300);
+        jlblArbustosA.setBounds(270, 10, 1100, 260);
 
         jButtonCheck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/check.png"))); // NOI18N
         jButtonCheck.setContentAreaFilled(false);
@@ -266,7 +266,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(780, 500, 113, 30);
+        jButton2.setBounds(780, 500, 86, 30);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton1.setContentAreaFilled(false);
@@ -277,7 +277,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(1150, 352, 113, 30);
+        jButton1.setBounds(1170, 360, 86, 30);
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton4.setContentAreaFilled(false);
@@ -288,7 +288,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(930, 290, 130, 40);
+        jButton4.setBounds(940, 350, 130, 40);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton5.setContentAreaFilled(false);
@@ -299,7 +299,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(660, 470, 113, 37);
+        jButton5.setBounds(660, 470, 86, 35);
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton6.setContentAreaFilled(false);
@@ -310,7 +310,7 @@ public class ZafariKids extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton6);
-        jButton6.setBounds(963, 550, 80, 37);
+        jButton6.setBounds(963, 550, 80, 35);
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -324,8 +324,13 @@ public class ZafariKids extends javax.swing.JFrame {
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Pistas.png"))); // NOI18N
         jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton8);
-        jButton8.setBounds(1100, 250, 80, 30);
+        jButton8.setBounds(1070, 260, 80, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -492,8 +497,12 @@ public class ZafariKids extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jlblArbustosAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlblArbustosAMouseClicked
-       sonido("aguila");
+     
     }//GEN-LAST:event_jlblArbustosAMouseClicked
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        sonido("Aguila");
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
