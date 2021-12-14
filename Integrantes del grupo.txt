@@ -1,7 +1,7 @@
 Integrantes del grupo 
 
 Jeisson Danilo Ortega Diaz -->Implementador
-Edwin Rojas Duarte --> Dueño del producto
-Elizabeth Rivera ch --> Desarrollador
+Edwin Rojas Duarte --> Desarrollador
+Elizabeth Rivera ch --> Dueño del producto
 Javier Ramirez Monsalve -->Lider del Grupo
 Hover Duarte --> Desarrollador 
