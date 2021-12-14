@@ -475,7 +475,9 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
         {
-            JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+            Instrucciones instrucciones = new Instrucciones();
+            this.dispose();
+            instrucciones.setVisible(true);
             
         } else {
             JOptionPane.showMessageDialog(this, " Ups Algun animal no esta en su lugar vuelve a intentarlo ");
