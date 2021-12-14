@@ -347,7 +347,9 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
         {
-            JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
             
         }
     }//GEN-LAST:event_jlblAguilaMouseDragged
@@ -363,7 +365,10 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+            VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
        
@@ -381,7 +386,10 @@ public class ZafariKids extends javax.swing.JFrame {
                      && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                      && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                      && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
     }//GEN-LAST:event_jlblJirafaMouseDragged
@@ -398,7 +406,10 @@ public class ZafariKids extends javax.swing.JFrame {
                      && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                      && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                      && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
     }//GEN-LAST:event_jlblTigreMouseDragged
@@ -415,7 +426,10 @@ public class ZafariKids extends javax.swing.JFrame {
                      && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                      && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                      && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
     }//GEN-LAST:event_jlblMicoMouseDragged
@@ -431,7 +445,10 @@ public class ZafariKids extends javax.swing.JFrame {
                  && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                  && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                  && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
     }//GEN-LAST:event_jlblLeonMouseDragged
@@ -447,7 +464,10 @@ public class ZafariKids extends javax.swing.JFrame {
                  && jlblLeon.getX() >= 1095 &&   jlblLeon.getX() <= 1105 &&  jlblLeon.getY() >= 395 &&   jlblLeon.getY() <= 405
                  && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                  && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
-        {JOptionPane.showMessageDialog(this, "VALIDACION EXITOSA");
+        {
+             VentaVictoria Victory = new VentaVictoria();
+            this.dispose();
+            Victory.setVisible(true);
         
         }
     }//GEN-LAST:event_jlblCebraMouseDragged
@@ -475,9 +495,9 @@ public class ZafariKids extends javax.swing.JFrame {
                 && jlblTigre.getX() >= 503 &&   jlblTigre.getX() <= 513 &&  jlblTigre.getY() >= 490 &&   jlblTigre.getY() <= 500
                 && jlblMico.getX() >= 495 && jlblMico.getX() <= 505  &&  jlblMico.getY() >= 165 &&  jlblMico.getY()<= 175)
         {
-            Instrucciones instrucciones = new Instrucciones();
+            VentaVictoria Victory = new VentaVictoria();
             this.dispose();
-            instrucciones.setVisible(true);
+            Victory.setVisible(true);
             
         } else {
             JOptionPane.showMessageDialog(this, " Ups Algun animal no esta en su lugar vuelve a intentarlo ");

@@ -177,6 +177,7 @@ public class Home_Principal extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         ZafariKids Jugando =new ZafariKids();
         Jugando.setVisible(true);
+        this.dispose();
         this.setVisible(false);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 

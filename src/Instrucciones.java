@@ -77,7 +77,7 @@ public class Instrucciones extends javax.swing.JFrame {
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
         ZafariKids Juego = new ZafariKids();
-        //this.dispose();
+        this.dispose();
         Juego.setVisible(true);
     }//GEN-LAST:event_btnContinuarActionPerformed
 
